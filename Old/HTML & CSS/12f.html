@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+            
+        }
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+            width:800px;
+            background-color: rgb(172, 59, 238);
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 2px;
+            align-items: center;
+        }
+        .home{
+            color: white;
+            font-weight: bold;
+            width: 40px;
+        }
+        .input{
+            width: 300px;
+            height: 35px;
+            padding-left: 20px;
+            border-radius: 25px;
+            border: none;
+            font-family: arial;
+        }
+        button{
+            border-style: solid;
+            border-color: white;
+            background-color: rgb(172, 59, 238);
+            color: white;
+            padding: 8px 15px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="home">Home</div>
+        <div>
+            <input class="input" type="text" placeholder="Search">
+        </div>
+        <div>
+            <button>Download</button>
+        </div>
+    </div>
+</body>
+</html>

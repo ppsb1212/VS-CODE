@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="updateButton()" class="js-button">Add to Cart</button>
+    <p class="js-info"></p>
+    <script>
+    document.querySelector('.js-button').addEventListener('click',() =>{
+        const info = document.querySelector('.js-info');
+            info.innerHTML = 'Added';
+        
+            setInterval(() => {
+                info.innerHTML = '';
+            },1000); 
+    });
+       
+    </script>
+</body>
+</html>

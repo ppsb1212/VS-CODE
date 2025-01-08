@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .container1{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+        .container2{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            height: 50px;
+            border-style: solid;
+            border-color: lightgrey;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: lightblue; width: 200px; ">200px</div>
+        <div style="background-color: lightpink; width: 75px;">75px</div>
+    </div>
+    <div class="container">
+        <div style="background-color: lightblue; width: 50px; ">item 1</div>
+        <div style="background-color: lightpink; flex: 1">item 2</div>
+        <div style="background-color: lightblue; width: 50px;">item 3</div>
+    </div>
+    <div class="container1">
+        <div style="background-color: lightblue; ">item 1</div>
+        <div style="background-color: lightpink; ">item 2</div>
+        <div style="background-color: lightblue; ">item 3</div>
+        <div style="background-color: lightpink; ">item 2</div>
+    </div>
+    <div class="container2">
+        <div style="background-color: lightblue; ">200px</div>
+        <div style="background-color: lightpink; ">75px</div>
+    </div>
+</body>
+</html>

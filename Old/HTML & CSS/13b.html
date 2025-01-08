@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .flexbox{
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+            }
+            .container1{
+                background-color: pink;
+                width: 100px;
+            }
+            .container2{
+                background-color: lightblue;
+                width: 200px;
+            }
+            .sub-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .heading{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <div class="container1"></div>
+            <div class="container2">
+                <div>row1</div>
+                <div class="sub-container">
+                    <div class="heading">row2</div>
+                    <div class="heading">row2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+</body>
+</html>

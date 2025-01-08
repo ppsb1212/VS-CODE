@@ -1,0 +1,112 @@
+
+* {
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    background: url(image/smartphone.jpg) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative; 
+   
+}
+
+.header h1{
+  text-align: center;
+  padding: auto;
+}
+.navbar{
+    overflow: hidden;
+    background-color: #b3003b;
+    top: 0;
+}
+.navbar a{
+    padding: 14px 16px;
+    text-align: center;
+    float: left;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: rgb(211, 195, 195);
+    color: black;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnRight{
+    width: 30%;
+    padding-left: 20px;
+    float: left;
+    border-radius: 10px;
+}
+
+.columnLeft{
+    width: 70%;
+    float: left;
+    border-radius: 10px;
+}
+
+.cardl{
+    background-color: gainsboro;
+    margin: 20px;
+    margin-right: 0;
+    padding: 20px;
+    
+}
+
+.cardr{
+    background-color: gainsboro;
+    margin: 20px;
+    margin-left: 0;
+    padding: 20px;
+   
+}
+
+.fakeimg{
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+   
+    background-size: cover;
+    height: 500px;
+    position: relative;
+   
+}
+
+@media screen and (max-width:800px){
+    .columnLeft, .columnRight{
+        width: 100%;
+        padding: 0;
+    }
+    }
+
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+img{
+ max-width: 100%;
+ height: auto;
+}
+
+.footer{
+    background-color: rgb(216, 213, 210);
+    padding: 40px;  
+    text-align: center;
+}
+
+
+

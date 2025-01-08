@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+</head>
+<body>
+    <button class="js-add">Add</button>
+    <button class="js-remove">Remove</button>
+    <script>
+        message();
+        let messages = 1;
+        let timeoutId;
+
+        document.querySelector('.js-add').addEventListener('click',() => {
+            addMessage();
+        });
+        document.querySelector('.js-remove').addEventListener('click',() => {
+            removeMessage();
+        });
+
+        function addMessage(){
+            messages++;
+            timeoutId = message();
+            clearInterval(timeoutId);
+            message();
+        };
+
+        function removeMessage(){
+            messages--;
+            timeoutId = message();
+            clearInterval(timeoutId);
+            message();
+        };
+
+
+        function message(){
+            setInterval(() =>{
+                if(document.title === 'App'){
+                document.title = `(${messages}) New messages`;   
+                }
+                else{
+                    document.title = 'App';
+                }
+            },1000);
+    }
+    
+    </script>
+</body>
+</html>
